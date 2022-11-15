@@ -16,11 +16,7 @@ public class HelloWorldController {
 
 	@RequestMapping(value = { "/HelloWorld2", "/HelloWorld2/{nom}" })
 	public String saluda2(@PathVariable(required = false) String nom) {
-		if (nom != null) {
-			return "Hola, " + nom + ". Estàs executant un projecte Maven.";
-		} else {
-			return "Hola, " + nom + ". Estàs executant un projecte Maven";
-		}
-	}
 
+		return "Hola, " + nom + ". Estàs executant un projecte Maven";
+	}
 }
